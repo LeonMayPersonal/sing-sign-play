@@ -1,17 +1,19 @@
-<svg width="260" height="120" viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="180" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+
   <!-- Background bubble -->
-  <rect x="0" y="0" width="260" height="120" rx="20" fill="#FDE2E4"/>
+  <rect x="0" y="0" width="600" height="180" rx="30" fill="#FDE2E4"/>
 
   <!-- Text -->
-  <text x="130" y="55" font-family="Quicksand" font-size="28" fill="#6D597A" text-anchor="middle">
-    Sing Sign Play
+  <text x="300" y="95" font-family="Quicksand" font-size="48" fill="#6D597A" text-anchor="middle">
+    Sing   Sign   Play
   </text>
 
-  <!-- Adult hand (forming S idea) -->
-  <circle cx="60" cy="85" r="18" fill="#F9C6D0"/>
-  <rect x="50" y="65" width="20" height="25" rx="10" fill="#F9C6D0"/>
+  <!-- Adult hand (left) -->
+  <circle cx="120" cy="135" r="28" fill="#F9C6D0"/>
+  <rect x="105" y="95" width="30" height="45" rx="15" fill="#F9C6D0"/>
 
-  <!-- Baby hand (forming P idea) -->
-  <circle cx="200" cy="85" r="14" fill="#F7A9C4"/>
-  <rect x="190" y="65" width="20" height="20" rx="10" fill="#F7A9C4"/>
+  <!-- Baby hand (right) -->
+  <circle cx="480" cy="135" r="22" fill="#F7A9C4"/>
+  <rect x="470" y="100" width="25" height="35" rx="12" fill="#F7A9C4"/>
+
 </svg>
