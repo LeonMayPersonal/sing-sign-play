@@ -1,23 +1,55 @@
-<form name="booking" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="booking" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <h2>Book a Session</h2>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <label for="name">Your Name:</label><br />
-  <input type="text" id="name" name="name" required /><br /><br />
+  <title>Contact – Sing, Sign and Play</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo-placeholder.png" alt="Sing, Sign and Play Logo" />
+      <h1>Sing, Sign and Play</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <label for="email">Email Address:</label><br />
-  <input type="email" id="email" name="email" required /><br /><br />
+  <main>
+    <section class="contact-card">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions about our sessions, bookings, or baby sign activities, we’d love to hear from you.</p>
 
-  <label for="session">Preferred Session:</label><br />
-  <select id="session" name="session">
-    <option value="Monday Morning">Monday Morning</option>
-    <option value="Wednesday Afternoon">Wednesday Afternoon</option>
-    <option value="Friday Morning">Friday Morning</option>
-  </select><br /><br />
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:singgignplay.nicole@gmail.com" class="contact-email">
+            singgignplay.nicole@gmail.com
+          </a>
+        </p>
 
-  <label for="message">Anything else you'd like us to know?</label><br />
-  <textarea id="message" name="message" rows="4"></textarea><br /><br />
+        <h3>Location</h3>
+        <p>Cardiff, Wales</p>
 
-  <button type="submit">Send Booking</button>
-</form>
+        <h3>Social</h3>
+        <p>Instagram coming soon!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sing, Sign and Play. All rights reserved.</p>
+  </footer>
+</body>
+</html>
