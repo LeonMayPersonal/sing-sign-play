@@ -1,87 +1,166 @@
+/* 🌸 Soft Baby Pastel Theme */
 
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fdf8f5;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FFF7F2; /* warm cream */
+  color: #444;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Header */
 header {
-  background-color: #ffe6f0;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  background: #FDE2E4; /* soft pink */
+  padding: 20px;
+  border-bottom: 4px solid #F9C6D0;
 }
 
-.logo {
+header .logo {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
-.logo img {
-  height: 50px;
-  margin-right: 10px;
+header .logo img {
+  width: 90px; /* ⭐ bigger logo */
+  height: auto;
 }
 
+header h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  color: #6D597A; /* pastel purple */
+}
+
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+  gap: 20px;
+  margin-top: 15px;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #6D597A;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
+nav a:hover,
 nav a.active {
-  font-weight: bold;
-  color: #d63384;
+  background: #F9C6D0;
 }
 
-main {
-  padding: 2rem;
-}
-
+/* Hero Section */
 .hero {
-  background-color: #fff0f5;
-  padding: 2rem;
+  background: #E8F3F8; /* pastel teal */
+  padding: 60px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #6D597A;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.1rem;
 }
 
 .button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #ff99c8;
-  color: white;
-  border-radius: 5px;
+  background: #F9C6D0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #6D597A;
+  font-weight: 600;
   text-decoration: none;
-  margin-top: 1rem;
+  transition: 0.3s;
 }
 
+.button:hover {
+  background: #F7A9C4;
+}
+
+/* Highlights */
 .highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
 }
 
 .highlight {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  flex: 1;
-  min-width: 200px;
+  background: #FFF;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
+.highlight h3 {
+  color: #6D597A;
+  margin-bottom: 10px;
+}
+
+/* Booking Section */
+.booking {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #FDE2E4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.booking h3 {
+  color: #6D597A;
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #ffe6f0;
+  padding: 20px;
+  margin-top: 40px;
+  color: #6D597A;
+}
+
+/* ⭐ Mobile Friendly */
+@media (max-width: 600px) {
+  header .logo img {
+    width: 70px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .booking {
+    padding: 20px;
+  }
 }
