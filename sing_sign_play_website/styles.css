@@ -28,15 +28,21 @@ header .logo {
   gap: 15px;
 }
 
+/* ⭐ Bigger logo */
 header .logo img {
-  width: 90px; /* ⭐ bigger logo */
+  width: 120px;
   height: auto;
 }
 
+/* ⭐ Upgraded site title */
 header h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.4rem; /* bigger */
   color: #6D597A; /* pastel purple */
+  background: #FDE2E4; /* soft pink */
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 /* Navigation */
@@ -137,6 +143,43 @@ nav a.active {
   margin-bottom: 10px;
 }
 
+/* Contact Page */
+.contact-card {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #E8F3F8; /* pastel teal */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-card h2 {
+  color: #6D597A;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #6D597A;
+  margin-top: 20px;
+}
+
+.contact-email {
+  color: #6D597A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -148,7 +191,12 @@ footer {
 /* ⭐ Mobile Friendly */
 @media (max-width: 600px) {
   header .logo img {
-    width: 70px;
+    width: 90px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    padding: 8px 14px;
   }
 
   nav ul {
@@ -162,5 +210,9 @@ footer {
 
   .booking {
     padding: 20px;
+  }
+
+  .contact-card {
+    padding: 25px;
   }
 }
