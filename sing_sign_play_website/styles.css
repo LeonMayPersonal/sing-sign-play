@@ -22,6 +22,14 @@ header {
   border-bottom: 4px solid #F9C6D0;
 }
 
+.main-logo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 header .logo {
   display: flex;
   align-items: center;
