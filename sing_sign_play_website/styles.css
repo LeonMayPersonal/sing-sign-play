@@ -1,85 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us – Sing Sign Play</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+/* 🌸 Soft Baby Pastel Theme */
 
-<body>
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<header>
-    <img src="images/ssp.png" alt="Sing Sign Play" class="banner-logo">
-</header>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FFF7F2;
+  color: #444;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+/* HEADER */
+header {
+  background: #FDE2E4;
+  padding: 40px 20px; /* bigger header */
+  border-bottom: 4px solid #F9C6D0;
+  text-align: center;
+}
 
-<section class="contact-card">
-    <h2>About Sing Sign Play</h2>
-    <p>
-        Sing Sign Play was created to give babies and parents a gentle, joyful way to communicate long before spoken words arrive. 
-        Our sessions blend <strong>baby sign language</strong>, <strong>music</strong>, and <strong>playful interaction</strong> to help your little one express themselves, feel understood, and build confidence.
-    </p>
+/* Remove old tiny logo rules */
+header .logo img {
+  width: auto;
+}
 
-    <h3>🌱 Why Baby Sign Language?</h3>
-    <p>
-        Babies can understand language months before they can speak. Baby sign language gives them a way to express needs, feelings, and ideas using simple hand signs. 
-        Research shows that early signing can:
-    </p>
+/* ⭐ Wide banner logo */
+.banner-logo {
+  width: 100%;
+  max-width: 1000px; /* adjust this to make it bigger or smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+}
 
-    <ul>
-        <li><strong>Reduce frustration</strong> by giving babies a way to communicate before speech develops.</li>
-        <li><strong>Support early language development</strong> by strengthening the connection between gesture, understanding, and spoken words.</li>
-        <li><strong>Boost confidence and bonding</strong> as babies feel heard and understood.</li>
-        <li><strong>Encourage social and emotional development</strong> through shared communication moments.</li>
-    </ul>
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-    <p>
-        Studies from child development researchers (including work published in journals like *Child Development* and *Early Childhood Research Quarterly*) highlight that gesture and early symbolic communication help babies build stronger language pathways. 
-        Signing doesn’t replace speech — it supports it.
-    </p>
+nav a {
+  text-decoration: none;
+  color: #6D597A;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
 
-    <h3>🎵 Learning Through Music</h3>
-    <p>
-        At Sing Sign Play, we teach communication through <strong>song, rhythm, and movement</strong>. Babies learn best when they’re having fun, and music is one of the most powerful tools for early learning. 
-        Singing helps babies:
-    </p>
+nav a:hover,
+nav a.active {
+  background: #F9C6D0;
+}
 
-    <ul>
-        <li>Recognise patterns and rhythm</li>
-        <li>Develop memory and attention</li>
-        <li>Connect emotionally with their grown‑ups</li>
-        <li>Feel safe, calm, and engaged</li>
-    </ul>
+/* HERO SECTION */
+.hero {
+  background: #E8F3F8;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 
-    <p>
-        Every session includes gentle songs, playful signing, sensory elements, and lots of smiles. You don’t need to be a singer — your baby loves your voice exactly as it is.
-    </p>
+.hero h2 {
+  font-size: 2rem;
+  color: #6D597A;
+}
 
-    <h3>💗 A Space to Bond and Unwind</h3>
-    <p>
-        Our classes are designed to be a <strong>calm, inclusive, and welcoming space</strong> for you and your baby. 
-        It’s a chance to slow down, connect, and enjoy meaningful moments together. 
-        Parents often tell us that Sing Sign Play becomes the highlight of their week — a place where they can relax, meet other families, and watch their babies thrive.
-    </p>
+.hero p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
 
-    <p>
-        Whether your baby is just beginning to explore the world or already full of personality, Sing Sign Play gives them the tools to communicate, express themselves, and shine.
-    </p>
+.button {
+  display: inline-block;
+  background: #F9C6D0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #6D597A;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-</section>
+.button:hover {
+  background: #F7A9C4;
+}
 
-<footer>
-    © 2026 Sing Sign Play — Cardiff, Wales
-</footer>
+/* HIGHLIGHTS */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
 
-</body>
-</html>
+.highlight {
+  background: #FFF;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.highlight h3 {
+  color: #6D597A;
+  margin-bottom: 10px;
+}
+
+/* BOOKING SECTION */
+.booking {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #FDE2E4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.booking h3 {
+  color: #6D597A;
+  margin-bottom: 10px;
+}
+
+/* CONTACT PAGE */
+.contact-card {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #E8F3F8;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-card h2 {
+  color: #6D597A;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #6D597A;
+  margin-top: 20px;
+}
+
+.contact-email {
+  color: #6D597A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #6D597A;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header {
+    padding: 30px 10px;
+  }
+
+  .banner-logo {
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .booking {
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+}
