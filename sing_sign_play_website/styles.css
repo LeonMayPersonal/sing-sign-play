@@ -18,14 +18,20 @@ body {
 /* HEADER */
 header {
   background: #FDE2E4;
-  padding: 40px 20px;
+  padding: 40px 20px; /* bigger header */
   border-bottom: 4px solid #F9C6D0;
   text-align: center;
 }
 
+/* Remove old tiny logo rules */
+header .logo img {
+  width: auto;
+}
+
+/* ⭐ Wide banner logo */
 .banner-logo {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1000px; /* adjust this to make it bigger or smaller */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -100,7 +106,6 @@ nav a.active {
   width: 90%;
   max-width: 1000px;
   margin: 40px auto;
-  text-align: center;
 }
 
 .highlight {
@@ -108,11 +113,121 @@ nav a.active {
   padding: 25px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 .highlight h3 {
   color: #6D597A;
   margin-bottom: 10px;
+}
+
+/* BOOKING SECTION */
+.booking {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #FDE2E4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.booking h3 {
+  color: #6D597A;
+  margin-bottom: 10px;
+}
+
+/* CONTACT PAGE */
+.contact-card {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #E8F3F8;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-card h2 {
+  color: #6D597A;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #6D597A;
+  margin-top: 20px;
+}
+
+.contact-email {
+  color: #6D597A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #6D597A;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header {
+    padding: 30px 10px;
+  }
+
+  .banner-logo {
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .booking {
+    padding: 20px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+  .site-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+}
+
+/* Highlight section styling */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.highlight {
+  width: 250px;
+  margin: 1rem;
 }
 
 .highlight-icon {
@@ -124,11 +239,3 @@ nav a.active {
   margin-right: auto;
   filter: drop-shadow(0 3px 6px rgba(0,0,0,0.12));
 }
-
-/* BOOKING SECTION */
-.booking {
-  width: 90%;
-  max-width: 900px;
-  margin: 40px auto;
-  background: #E8F3F8;
-  padding
