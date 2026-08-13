@@ -235,3 +235,22 @@ footer {
   color: #444;
 }
 
+/* fix diff in contact and index */
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+}
+
+
