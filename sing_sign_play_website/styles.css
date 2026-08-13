@@ -213,3 +213,25 @@ footer {
     padding: 25px;
   }
 }
+
+.events-intro {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #E8F3F8; /* same blue pastel as hero/contact */
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.events-intro h2 {
+  color: #6D597A;
+  margin-bottom: 15px;
+}
+
+.events-intro p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
