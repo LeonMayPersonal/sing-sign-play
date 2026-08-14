@@ -262,26 +262,25 @@ footer {
   color: #444;
 }
 
+/* Pastel bullet points for content sections */
 .contact-card ul {
   list-style: none;
-  margin-left: 1.5rem;
-  padding-left: 0;
+  margin-left: 0;        /* remove weird inherited spacing */
+  padding-left: 0;       /* clean slate */
 }
 
 .contact-card li {
   position: relative;
-  padding-left: 1.2rem;
-  margin-bottom: 0.6rem;
+  padding-left: 1.8rem;  /* more space so text doesn't collide with bullet */
+  margin-bottom: 0.8rem; /* nicer spacing between bullets */
 }
 
 .contact-card li::before {
   content: "•";
   position: absolute;
-  left: 0;
-  top: 0;
-  color: #F9C6D0; /* pastel pink */
-  font-size: 1.4rem;
-  line-height: 1rem;
+  left: 0;               /* bullet sits exactly at the left edge */
+  top: 0.2rem;           /* vertically aligns with first line of text */
+  color: #F9C6D0;        /* pastel pink */
+  font-size: 1.6rem;     /* slightly bigger, looks intentional */
+  line-height: 1;        /* prevents weird vertical stretching */
 }
-
-
