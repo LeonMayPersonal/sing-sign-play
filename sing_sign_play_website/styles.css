@@ -262,6 +262,17 @@ footer {
   color: #444;
 }
 
+/* Fix bullet alignment inside contact-card */
+.contact-card {
+  text-align: left;
+}
+
+.contact-card h2,
+.contact-card h3 {
+  text-align: center;
+}
+
+
 /* Pastel bullet points for content sections */
 .contact-card ul {
   list-style: none;
