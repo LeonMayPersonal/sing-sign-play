@@ -1,90 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact – Sing, Sign and Play</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Sing Sign Play</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <img src="images/singsignplaylogo.png" alt="Sing Sign Play" class="banner-logo">
-    </div>
+<header>
+  <img src="images/singsignplaylogo.png" alt="Sing Sign Play" class="banner-logo">
+</header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>        
-        <li><a href="events.html">Upcoming Events</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ⭐ MAIN WRAPPER (this was missing!) ⭐ -->
-  <main>
+<section class="contact-card">
+  <h2>Contact Us</h2>
 
-    <section class="contact-card">
-      <h2>Get in Touch</h2>
-      <p>If you have any questions about our sessions, bookings, or baby sign activities, we’d love to hear from you.</p>
+  <div class="contact-info">
+    <h3>Email</h3>
+    <p><a href="mailto:hello@singsignplay.com" class="contact-email">hello@singsignplay.com</a></p>
 
-      <div class="contact-info">
+    <h3>Location</h3>
+    <p>St Mellons Hub, Cardiff</p>
 
-        <!-- EMAIL -->
-        <h3>📧 Email</h3>
-        <p>
-          <a href="mailto:singsignplay.nicole@gmail.com" class="contact-email">
-            singsignplay.nicole@gmail.com
-          </a>
-        </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18..."
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</section>
 
-        <hr>
+<footer>
+  © 2026 Sing Sign Play — Cardiff, Wales
+</footer>
 
-        <!-- LOCATION -->
-        <h3>📍 Location</h3>
-        <p>St Mellons Library & Hub, Cardiff</p>
-
-        <p>
-          <a href="https://www.google.com/maps/place/St+Mellons+Library+and+Hub/@51.523897,-3.113732"
-             target="_blank"
-             class="contact-email">
-            View on Google Maps
-          </a>
-        </p>
-
-        <!-- EMBEDDED MAP -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.497791889993!2d-3.115921!3d51.523897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e9b4f3f1e6e3b%3A0x3f4b6f4e5b0a4b4!2sSt%20Mellons%20Library%20and%20Hub!5e0!3m2!1sen!2suk!4v1697040000000!5m2!1sen!2suk"
-          width="100%"
-          height="300"
-          style="border:0; border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.08); margin-top:20px;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <hr>
-
-        <!-- HOW TO FIND US -->
-        <h3>🧭 How to Find Us</h3>
-        <p>
-          The library is located within the St Mellons Community Hub. There is free parking on-site,
-          and the venue is fully accessible for prams and wheelchairs.
-        </p>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 Sing, Sign and Play. All rights reserved.</p>
-  </footer>
+<!-- Highlight correct nav link -->
+<script>
+  document.querySelector('a[href="contact.html"]').classList.add('active');
+</script>
 
 </body>
 </html>
