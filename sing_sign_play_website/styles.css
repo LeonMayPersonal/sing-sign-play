@@ -262,3 +262,26 @@ footer {
   color: #444;
 }
 
+.contact-card ul {
+  list-style: none;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.contact-card li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #F9C6D0; /* pastel pink */
+  font-size: 1.4rem;
+  line-height: 1rem;
+}
+
+
