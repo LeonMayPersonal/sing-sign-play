@@ -319,3 +319,47 @@ footer {
   max-height: 300px; /* adjust as needed */
 }
 
+/* Full-width banner */
+.site-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation styling */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  background: #fdf3f8; /* soft pastel pink */
+}
+
+.main-nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+}
+
+.main-nav ul li a.active {
+  color: #d85fa3; /* pastel highlight */
+}
+
+/* Remove default page spacing */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
