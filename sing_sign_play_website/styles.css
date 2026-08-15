@@ -307,6 +307,13 @@ footer {
   height: auto;
   display: block;
 }
+
+.site-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .site-banner {
   object-fit: cover;
   max-height: 300px; /* adjust as needed */
