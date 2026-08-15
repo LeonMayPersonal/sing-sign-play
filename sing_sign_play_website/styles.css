@@ -362,4 +362,14 @@ body, html {
   padding: 0;
 }
 
+.site-banner {
+  width: 100%;
+  height: 220px;          /* ideal height for your banner */
+  object-fit: contain;    /* keeps ALL text visible */
+  object-position: center;
+  display: block;
+  background-color: #fff; /* prevents weird edges on some screens */
+}
+
+
 
