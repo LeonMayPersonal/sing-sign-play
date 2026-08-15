@@ -295,3 +295,16 @@ footer {
   font-size: 1.6rem;     /* slightly bigger, looks intentional */
   line-height: 1;        /* prevents weird vertical stretching */
 }
+
+.site-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
