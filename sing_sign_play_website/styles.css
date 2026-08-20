@@ -80,7 +80,7 @@ main { margin: 0 auto; max-width: 1180px; padding: 54px 24px 30px; }
   position: relative;
 }
 .hero::after { background: var(--sun); border-radius: 50%; content: ''; height: 240px; position: absolute; right: -80px; top: -90px; width: 240px; }
-.hero h2, .events-intro h2 { color: var(--ink); font-size: clamp(2.4rem, 5vw, 4.7rem); line-height: .98; max-width: 600px; }
+.hero h1, .events-intro h1 { color: var(--ink); font-size: clamp(2.4rem, 5vw, 4.7rem); line-height: .98; max-width: 600px; }
 .eyebrow { color: var(--coral-dark) !important; font-family: Arial, sans-serif; font-size: .72rem !important; font-weight: 700; letter-spacing: .13em; margin: 0 0 18px !important; text-transform: uppercase; }
 .hero p { color: var(--muted); font-size: 1.12rem; margin: 24px 0 30px; max-width: 520px; }
 .hero-note { align-items: flex-start; background: var(--paper); border: 1px solid rgba(23,59,63,.1); border-radius: 8px; box-shadow: 0 16px 30px rgba(23,59,63,.08); display: flex; flex-direction: column; gap: 14px; justify-self: end; max-width: 280px; padding: 28px; position: relative; z-index: 1; }
@@ -113,10 +113,10 @@ main { margin: 0 auto; max-width: 1180px; padding: 54px 24px 30px; }
 .location-link:hover { color: var(--coral-dark); }
 .session-detail small { color: var(--muted); font-family: Arial, sans-serif; font-size: .78rem; }
 .booking, .contact-card { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); margin: 0 auto 40px; max-width: 900px; padding: clamp(28px, 5vw, 56px); }
-.booking h3, .contact-card h2 { color: var(--ink); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1; margin-bottom: 14px; }
+.booking h3, .contact-card h1 { color: var(--ink); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1; margin-bottom: 14px; }
 .booking > p, .contact-card > p, .contact-card li { color: var(--muted); }
 .contact-card { max-width: 850px; }
-.contact-card h2 { margin-bottom: 24px; }
+.contact-card h1 { margin-bottom: 24px; }
 .contact-info { margin-top: 34px; }
 .contact-info h3 { margin-top: 25px; }
 .contact-email { color: var(--coral-dark); font-family: Arial, sans-serif; font-weight: 700; }
@@ -144,7 +144,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-family: Ar
   .booking { padding: 24px 12px; }
   .calendly-inline-widget { min-width: 0 !important; width: 100% !important; }
   nav a { font-size: .72rem; padding: 8px 9px; }
-  .hero h2, .events-intro h2 { font-size: 2.65rem; }
+  .hero h1, .events-intro h1 { font-size: 2.65rem; }
   .highlights { grid-template-columns: 1fr; }
   nav ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
