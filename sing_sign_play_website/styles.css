@@ -97,6 +97,8 @@ main { margin: 0 auto; max-width: 1180px; padding: 54px 24px 30px; }
 .highlight { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 28px 22px; text-align: center; transition: box-shadow .2s ease, transform .2s ease; }
 .highlight:hover { box-shadow: var(--shadow); transform: translateY(-5px); }
 .highlight h3, .contact-card h3, .booking h3 { color: var(--coral-dark); font-size: 1.15rem; line-height: 1.15; margin: 14px 0 9px; }
+.highlight-link { color: inherit; text-decoration: none; }
+.highlight-link:hover { color: var(--ink); }
 .highlight p { color: var(--muted); font-size: .96rem; }
 .highlight-icon { height: 66px; object-fit: contain; width: 66px; }
 
